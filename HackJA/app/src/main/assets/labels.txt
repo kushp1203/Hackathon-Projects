@@ -1,0 +1,38 @@
+1 dot
+2 dot
+3 dot
+30
+40
+50
+95
+bleach
+do not bleach
+do not dry
+do not dry clean
+do not iron
+do not steam
+do not tumble dry
+do not wash
+do not wring
+drip dry
+dry clean
+Dry Clean, Any Solvent Except Trichoroethlylene
+dry drip in shade
+hand wash
+iron
+iron high temp
+iron low temp
+iron medium temp
+machine wash
+machine wash delicate
+machine wash permanent press
+natural dry
+non chlorine bleach
+shade dry
+tumble dry
+tumble dry high temp
+tumble dry low temp
+tumble dry medium
+tumble dry no heat
+wet clean
+wet clean very delicate

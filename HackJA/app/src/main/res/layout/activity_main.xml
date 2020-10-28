@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcome_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="WELCOME TO WASH ME!"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/camera_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/welcome_text"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="110dp"
+                android:onClick="OpenCam"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_icon"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/scan_tag_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_button"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:enabled="true"
+                android:text="Scan Tag"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="33sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/how_it_works"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scan_tag_text"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:enabled="true"
+                android:text="How it works"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/how_it_works"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="1)Tap the ''scan tag'' and you will be directed to your camera \n 2)The app then figures out the symbol and gives you instructions on how to wash your article of clothing \n 3) If you want to take another image then click the camera, or if your image is not the right one then click the camera again"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/how_it_works"
+                android:layout_toEndOf="@+id/how_it_works"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="300dp"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/your_thumbnail"
+                android:text="@string/imgdescriptor"
+                android:textSize="25sp"
+                android:layout_below="@id/thumbnail"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/auto_continue"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/your_thumbnail"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:elevation="6dp"
+                android:text="CONTINUE"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#00c0ff"
+                android:layout_marginBottom="25dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
